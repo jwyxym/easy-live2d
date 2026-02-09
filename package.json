@@ -6,28 +6,8 @@
   "engines": {
     "node": "^18.0.0 || >=20.0.0"
   },
-  "author": {
-    "name": "Panzer_Jack",
-    "email": "panzer_jack@panzer-jack.cn",
-    "url": "https://www.panzer-jack.cn"
-  },
-  "keywords": [
-    "easy-live2d",
-    "easy-live2d",
-    "Live2D Web SDK",
-    "live2d"
-  ],
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    }
-  },
+  "exports": "./src/index.ts",
   "files": [
     "dist"
   ],
