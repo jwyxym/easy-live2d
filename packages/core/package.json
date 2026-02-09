@@ -18,18 +18,18 @@
   },
   "dependencies": {
     "@pixi/sound": "^6.0.1",
-    "@tweenjs/tween.js": "catalog:dep",
-    "dayjs": "catalog:dep",
-    "localforage": "catalog:dep",
-    "pixi-filters": "catalog:dep",
-    "pixi.js": "catalog:dep"
+    "@tweenjs/tween.js": "latestdep",
+    "dayjs": "latestdep",
+    "localforage": "latestdep",
+    "pixi-filters": "latestdep",
+    "pixi.js": "latestdep"
   },
   "devDependencies": {
-    "@esbuild-plugins/tsconfig-paths": "catalog:dev",
-    "@pixi/devtools": "catalog:dev",
-    "@types/node": "catalog:dev",
-    "@unocss/eslint-plugin": "catalog:",
-    "tsup": "catalog:dev",
-    "typescript": "catalog:dev"
+    "@esbuild-plugins/tsconfig-paths": "latest",
+    "@pixi/devtools": "latest",
+    "@types/node": "latest",
+    "@unocss/eslint-plugin": "latest",
+    "tsup": "latest",
+    "typescript": "latest"
   }
 }
