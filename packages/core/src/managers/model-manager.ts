@@ -73,6 +73,10 @@ export type TModelAssets = CubismSetting | string
  * 负责模型生成、功能组件生成、更新处理和渲染调用。
  */
 export class ModelManager extends CubismUserModel {
+  public mouthOpen = 0.0;
+  public setMouthOpen (value : number) {
+    this.mouthOpen = value;
+  }
   /**
    * @param modelAssets 模型数据来源，可以是ICubismModelSetting实例或模型文件路径
    */
@@ -569,14 +573,8 @@ export class ModelManager extends CubismUserModel {
     }
 
     // 唇形同步设置
-    if (this._lipsync) {
-      let value = 0.0 // 在实时唇形同步中，从系统获取音量，并在0~1范围内输入值。
-
-      this._wavFileHandler.update(deltaTimeSeconds)
-      value = this._wavFileHandler.getRms()
-      for (let i = 0; i < this._lipSyncIds.getSize(); ++i) {
-        this._model.addParameterValueById(this._lipSyncIds.at(i), value, 3)
-      }
+    for (let i = 0; i < this._lipSyncIds.getSize(); ++i) {
+      this._model.addParameterValueById(this._lipSyncIds.at(i), this.mouthOpen, 3)
     }
 
     // 姿势设置
