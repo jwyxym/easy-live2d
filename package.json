@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "latest",
-    "@easy-live2d/core": "workspace:*",
+    "@easy-live2d/core": "file:./packages/core",
     "@esbuild-plugins/tsconfig-paths": "^0.1.0",
     "@types/node": "latest",
     "eslint": "^9.25.1",
