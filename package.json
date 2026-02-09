@@ -52,14 +52,14 @@
     "@pixi/sound": "^6.0.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "catalog:dev",
+    "@antfu/eslint-config": "latest",
     "@easy-live2d/core": "workspace:*",
     "@esbuild-plugins/tsconfig-paths": "^0.1.0",
-    "@types/node": "catalog:dev",
+    "@types/node": "latest",
     "eslint": "^9.25.1",
-    "jiti": "catalog:dev",
+    "jiti": "latest",
     "release-it": "^19.0.3",
-    "tsup": "catalog:dev",
-    "typescript": "catalog:dev"
+    "tsup": "latest",
+    "typescript": "latest"
   }
 }
